@@ -6,6 +6,7 @@ module "ec2_cluster" {
   instance_count         = 2
 
   ami                    = "ami-0443305dabd4be2bc"
+  ebs_optimized          = true
   instance_type          = "t2.micro"
   key_name               = "user1"
   monitoring             = true
