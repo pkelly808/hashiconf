@@ -25,5 +25,5 @@ variable "environment" {
 
 variable "linux_ami" {
   type    = string
-  default = "ami-0bfd41cde731af7cb"
+  default = "ami-0bc06212a56393ee1"
 }
