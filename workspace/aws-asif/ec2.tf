@@ -14,6 +14,7 @@ module "ec2_instance" {
   name = "instance-${each.key}"
 
   ami                    = var.linux_ami
+  associate_public_ip_address = true
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.admin.key_name
   monitoring             = false
