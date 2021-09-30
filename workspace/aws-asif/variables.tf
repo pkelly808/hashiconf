@@ -22,3 +22,8 @@ variable "environment" {
   type    = string
   default = "dev"
 }
+
+variable "linux_ami" {
+  type    = string
+  default = "ami-0bfd41cde731af7cb"
+}

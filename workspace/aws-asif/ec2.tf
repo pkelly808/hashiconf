@@ -13,7 +13,7 @@ module "ec2_instance" {
 
   name = "instance-${each.key}"
 
-  ami                    = "ami-ebd02392"
+  ami                    = var.linux_ami
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.admin.key_name
   monitoring             = false
