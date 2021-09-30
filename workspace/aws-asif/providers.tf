@@ -13,8 +13,3 @@ provider "aws" {
   access_key = var.access_key
   secret_key = var.secret_key
 }
-
-# Create a VPC
-resource "aws_vpc" "main" {
-  cidr_block = "10.${local.vpc[var.environment]}.0.0/16"
-}
